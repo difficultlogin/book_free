@@ -2,4 +2,9 @@
 
 hello
 
-<script src="{% static 'libs/tinymce/jquery.tinymce.min.js' %}"></script>
+<br>
+
+{% for x in item %}
+    {{ x.desc | safe }}
+    {{ x.slug2 }}
+{% endfor %}
