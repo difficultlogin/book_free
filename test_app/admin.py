@@ -3,3 +3,4 @@ from .models import *
 
 admin.site.register(TestModel)
 admin.site.register(Categories)
+admin.site.register(Category2)
