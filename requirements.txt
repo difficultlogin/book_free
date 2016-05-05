@@ -2,3 +2,4 @@ Pillow
 django-filebrowser-no-grappelli
 django-tinymce
 django-autoslug
+django-mptt
