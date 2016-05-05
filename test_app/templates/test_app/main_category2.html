@@ -3,6 +3,9 @@
 <ul>
     {% recursetree items %}
         <li>
+            {% for x in node.get_images %}
+            <img src="{{ x }}" alt="">
+            {% endfor %}
             <a href="{{ node.get_absolute_url }}">{{ node.name }}</a>
             {% if not node.is_leaf_node %}
                 <ul class="children">

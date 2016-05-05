@@ -10,5 +10,7 @@ def main_category(request):
     return render_to_response('test_app/main_categories.html', {'items': items})
 
 def main_category2(request):
-    items =Category2.objects.all()
-    return render_to_response('test_app/main_category2.html', {'items': items})
+    items = Category2.objects.all()
+    cover = Cover2.objects.all()
+    print(dir(cover[1]))
+    return render_to_response('test_app/main_category2.html', {'items': items, 'cover': cover})
